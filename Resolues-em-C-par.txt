@@ -1,0 +1,701 @@
+* a) Maior de idade e carteira de motorista
+
+using System;
+
+class Program
+
+{
+
+static void Main()
+
+{
+
+Console.Write("Digite sua idade: ");
+
+int idade = int.Parse(Console.ReadLine());
+
+Console.Write("Possui carteira de motorista? (sim/nao): ");
+
+string temCarteira = Console.ReadLine().ToLower();
+
+if (idade > 18 && temCarteira == "sim")
+
+{
+
+Console.WriteLine("Você pode dirigir");
+
+}
+
+}
+
+}
+
+* b) Comprar carro novo
+
+using System;
+
+class Program
+
+{
+
+static void Main()
+
+{
+
+Console.Write("Deseja comprar um carro novo? (sim/nao): ");
+
+string querCarro = Console.ReadLine().ToLower();
+
+Console.Write("Tem dinheiro suficiente? (sim/nao): ");
+
+string temDinheiro = Console.ReadLine().ToLower();
+
+if (querCarro == "sim" && temDinheiro == "sim")
+
+{
+
+Console.WriteLine("Parabéns, você pode comprar um carro novo!");
+
+}
+
+}
+
+}
+
+* c) Qualificação para vaga
+
+using System;
+
+class Program
+
+{
+
+static void Main()
+
+{
+
+Console.Write("Possui diploma de ensino superior? (sim/nao): ");
+
+string temDiploma = Console.ReadLine().ToLower();
+
+Console.Write("Digite sua idade: ");
+
+int idade = int.Parse(Console.ReadLine());
+
+if (temDiploma == "sim" && idade > 21)
+
+{
+
+Console.WriteLine("Parabéns, você está qualificado para a vaga!");
+
+}
+
+}
+
+}
+
+* d) Assinante e série assistida
+
+using System;
+
+class Program
+
+{
+
+static void Main()
+
+{
+
+Console.Write("É assinante do serviço de streaming? (sim/nao): ");
+
+string eAssinante = Console.ReadLine().ToLower();
+
+Console.Write("Já assistiu à série específica? (sim/nao): ");
+
+string assistiuSerie = Console.ReadLine().ToLower();
+
+if (eAssinante == "sim" && assistiuSerie == "sim")
+
+{
+
+Console.WriteLine("Ótimo, agora você pode assistir à nova temporada!");
+
+}
+
+}
+
+}
+
+* e) Validação de nome e idade
+
+using System;
+
+class Program
+
+{
+
+static void Main()
+
+{
+
+Console.Write("Digite seu nome: ");
+
+string nome = Console.ReadLine();
+
+Console.Write("Digite sua idade: ");
+
+int idade = int.Parse(Console.ReadLine());
+
+if (nome.Length > 3 && idade >= 18)
+
+{
+
+Console.WriteLine("Acesso permitido");
+
+}
+
+else
+
+{
+
+Console.WriteLine("Acesso negado");
+
+}
+
+}
+
+}
+
+* f) Açúcar ou leite no café
+
+using System;
+
+class Program
+
+{
+
+static void Main()
+
+{
+
+Console.Write("Deseja adicionar açúcar? (sim/nao): ");
+
+string acucar = Console.ReadLine().ToLower();
+
+Console.Write("Deseja adicionar leite? (sim/nao): ");
+
+string leite = Console.ReadLine().ToLower();
+
+if (acucar == "sim" || leite == "sim")
+
+{
+
+Console.WriteLine("Café com adicional preparado!");
+
+}
+
+}
+
+}
+
+* g) Divisível por 3 ou 5
+
+using System;
+
+class Program
+
+{
+
+static void Main()
+
+{
+
+Console.Write("Digite um número inteiro: ");
+
+int numero = int.Parse(Console.ReadLine());
+
+if (numero % 3 == 0 || numero % 5 == 0)
+
+{
+
+Console.WriteLine("O número é divisível por 3 ou por 5!");
+
+}
+
+}
+
+}
+
+* h) Compra de produto (sim ou s)
+
+using System;
+
+class Program
+
+{
+
+static void Main()
+
+{
+
+Console.Write("Deseja comprar o produto? (sim/s/nao): ");
+
+string resposta = Console.ReadLine().ToLower();
+
+if (resposta == "sim" || resposta == "s")
+
+{
+
+Console.WriteLine("Obrigado pela compra!");
+
+}
+
+}
+
+}
+
+* i) Verificação de nome (Wilson ou Gloria)
+
+using System;
+
+class Program
+
+{
+
+static void Main()
+
+{
+
+Console.Write("Digite seu nome: ");
+
+string nome = Console.ReadLine();
+
+if (nome.Equals("Wilson", StringComparison.OrdinalIgnoreCase) || nome.Equals("Gloria", StringComparison.OrdinalIgnoreCase))
+
+{
+
+Console.WriteLine("Olá, bem-vindo(a) de volta!");
+
+}
+
+}
+
+}
+
+* j) Número maior que 10 ou menor que 0
+
+using System;
+
+class Program
+
+{
+
+static void Main()
+
+{
+
+Console.Write("Digite um número inteiro: ");
+
+int numero = int.Parse(Console.ReadLine());
+
+if (numero > 10 || numero < 0)
+
+{
+
+Console.WriteLine("Número inválido!");
+
+}
+
+}
+
+}
+
+* k) Verificação de robô
+
+using System;
+
+class Program
+
+{
+
+static void Main()
+
+{
+
+Console.Write("Você não é um robô? Responda true (verdadeiro) ou false (falso): ");
+
+bool naoERobo = bool.Parse(Console.ReadLine());
+
+if (!naoERobo)
+
+{
+
+Console.WriteLine("Por favor, prove que você não é um robô");
+
+}
+
+}
+
+}
+
+* l) Número diferente de zero
+
+using System;
+
+class Program
+
+{
+
+static void Main()
+
+{
+
+Console.Write("Digite um número: ");
+
+int numero = int.Parse(Console.ReadLine());
+
+if (numero != 0)
+
+{
+
+Console.WriteLine("O número é diferente de zero");
+
+}
+
+}
+
+}
+
+* m) Membro inativo
+
+using System;
+
+class Program
+
+{
+
+static void Main()
+
+{
+
+Console.Write("Você não é um membro inativo? Responda true (verdadeiro) ou false (falso): ");
+
+bool naoEInativo = bool.Parse(Console.ReadLine());
+
+if (!naoEInativo)
+
+{
+
+Console.WriteLine("Por favor, atualize sua inscrição para continuar usufruindo dos beneficios do clube");
+
+}
+
+}
+
+}
+
+* n) Palavra não vazia
+
+using System;
+
+class Program
+
+{
+
+static void Main()
+
+{
+
+Console.Write("Digite uma palavra: ");
+
+string palavra = Console.ReadLine();
+
+if (!string.IsNullOrEmpty(palavra))
+
+{
+
+Console.WriteLine("A palavra não é vazia");
+
+}
+
+}
+
+}
+
+* o) Cancelamento de operação
+
+using System;
+
+class Program
+
+{
+
+static void Main()
+
+{
+
+Console.Write("Você não deseja cancelar a operação? Responda true (verdadeiro) ou false (falso): ");
+
+bool naoDesejaCancelar = bool.Parse(Console.ReadLine());
+
+if (!naoDesejaCancelar)
+
+{
+
+Console.WriteLine("Por favor, confirme o cancelamento da operação");
+
+}
+
+}
+
+}
+
+Lista 05 - Operadores Ternário
+
+* a) Número par ou ímpar
+
+using System;
+
+class Program
+
+{
+
+static void Main()
+
+{
+
+Console.Write("Digite um número: ");
+
+int n = int.Parse(Console.ReadLine());
+
+string resultado = (n % 2 == 0) ? "Par" : "Ímpar";
+
+Console.WriteLine($"O número é: {resultado}");
+
+}
+
+}
+
+* b) Maior entre dois números
+
+using System;
+
+class Program
+
+{
+
+static void Main()
+
+{
+
+Console.Write("Digite o primeiro número: ");
+
+int a = int.Parse(Console.ReadLine());
+
+Console.Write("Digite o segundo número: ");
+
+int b = int.Parse(Console.ReadLine());
+
+int maior = (a > b) ? a : b;
+
+Console.WriteLine($"O maior número é: {maior}");
+
+}
+
+}
+
+* c) Verificar se uma lista está vazia
+
+using System;
+
+using System.Collections.Generic;
+
+class Program
+
+{
+
+static void Main()
+
+{
+
+List<int> lista = new List<int>();
+
+string resultado = (lista.Count == 0) ? "Lista está vazia" : "Lista não está vazia";
+
+Console.WriteLine(resultado);
+
+}
+
+}
+
+* d) Verificar se uma string está vazia
+
+using System;
+
+class Program
+
+{
+
+static void Main()
+
+{
+
+Console.Write("Digite algo (ou apenas pressione Enter): ");
+
+string texto = Console.ReadLine();
+
+string resultado = string.IsNullOrEmpty(texto) ? "String vazia" : "String preenchida";
+
+Console.WriteLine(resultado);
+
+}
+
+}
+
+* e) Verificar se uma condição é verdadeira
+
+using System;
+
+class Program
+
+{
+
+static void Main()
+
+{
+
+bool condicao = true;
+
+string mensangem = condicao ? "Condição é Verdadeira" : "Condição é Falsa";
+
+Console.WriteLine(mensangem);
+
+}
+
+}
+
+* f) Valor absoluto de um número
+
+using System;
+
+class Program
+
+{
+
+static void Main()
+
+{
+
+Console.Write("Digite um número: ");
+
+int numero = int.Parse(Console.ReadLine());
+
+int absoluto = (numero < 0) ? -numero : numero;
+
+Console.WriteLine($"O valor absoluto é: {absoluto}");
+
+}
+
+}
+
+* g) Positivo, negativo ou zero (ternários encadeados)
+
+using System;
+
+class Program
+
+{
+
+static void Main()
+
+{
+
+Console.Write("Digite um número: ");
+
+int numero = int.Parse(Console.ReadLine());
+
+string classificacao = (numero > 0) ? "Positivo" : (numero < 0) ? "Negativo" : "Zero";
+
+Console.WriteLine($"O número é: {classificacao}");
+
+}
+
+}
+
+* h) Converter string em número com verificação
+
+using System;
+
+class Program
+
+{
+
+static void Main()
+
+{
+
+Console.Write("Digite um texto numérico: ");
+
+string entrada = Console.ReadLine();
+
+int numero;
+
+bool sucesso = int.TryParse(entrada, out numero);
+
+string mensagem = sucesso ? $"Número convertido: {numero}" : "Falha ao converter em número";
+
+Console.WriteLine(mensagem);
+
+}
+
+}
+
+* i) Divisível por outro número
+
+using System;
+
+class Program
+
+{
+
+static void Main()
+
+{
+
+Console.Write("Digite o primeiro número (dividendo): ");
+
+int num1 = int.Parse(Console.ReadLine());
+
+Console.Write("Digite o segundo número (divisor): ");
+
+int num2 = int.Parse(Console.ReadLine());
+
+string resultado = (num2 != 0 && num1 % num2 == 0) ? $"{num1} é divisível por {num2}" : $"{num1} não é divisível por {num2}";
+
+Console.WriteLine(resultado);
+
+}
+
+}
+
+* j) Verificar se variável é nula
+
+using System;
+
+class Program
+
+{
+
+static void Main()
+
+{
+
+string texto = null;
+
+string resultado = (texto == null) ? "A variável é nula" : "A variável não é nula";
+
+Console.WriteLine(resultado);
+
+}
+
+}
