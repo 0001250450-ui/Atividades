@@ -64,7 +64,7 @@ Inicio
    Se (num1 < num2) e (num1 > num3) Entao
       Escreval("O primeiro número é menor que o segundo e maior que o terceiro.")
    Senao
-      Escreval("A condição NÃO foi satisfied.")
+      Escreva("A condição NÃO foi satisfeita.")
    FimSe
 Fimalgoritmo
 
@@ -93,7 +93,7 @@ Inicio
    Escreva("Digite um número inteiro: ")
    Leia(num)
    
-   Se (num % 2 = 0) Entao
+   Se (num mod 2 = 0) Entao
       Escreval("O número é par.")
    Senao
       Escreval("O número é ímpar.")
