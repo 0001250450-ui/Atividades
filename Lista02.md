@@ -112,6 +112,6 @@ Var
 Inicio
    Escreva("Digite um número inteiro: ")
    Leia(num)
-   resto <- num % 2
+   resto <- num MOD 2
    Escreval("O resto da divisão por 2 é: ", resto)
 Fimalgoritmo
